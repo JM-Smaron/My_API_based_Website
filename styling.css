@@ -14,46 +14,81 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #cdc0f4;
+    background-color: #e0dcec;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #090b4d;
-    padding: 2rem;
-    color: rgb(239, 248, 248);
+    background: linear-gradient(to right, #185387, #abc34e);
+    padding: 40px 20px;
     text-align: center;
-}
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-}
-
-input#searchBox {
-    padding: 0.8rem;
-    width: 300px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .container .emoji {
+    font-size: 2.5rem;
+    vertical-align: middle;
+    animation: bounce 2s infinite;
+  }
+  
+  .container .title {
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  input#searchBox {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 25px;
     border: none;
-    border-radius: 8px;
-}
-
-button {
-    padding: 0.8rem 1.5rem;
-    background-color: #77efd7;
-    color: rgb(14, 18, 37);
+    outline: none;
+    font-size: 1rem;
+    margin-right: 10px;
+    box-shadow: inset 2px 2px 5px #d1d9e6, inset -3px -3px 7px #ffffff;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border-radius: 25px;
     border: none;
-    border-radius: 8px;
+    background-color: #ffffff;
+    color: #00c6ff;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #3dcdab;
-}
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  button:hover {
+    background-color: #00c6ff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 198, 255, 0.3);
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-5px); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
 
 #displayArea {
     flex: 1;
