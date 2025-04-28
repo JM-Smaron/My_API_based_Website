@@ -36,7 +36,7 @@ function process(data) {
 const weatherApiKey = "1e57f5a139cc2aa96d25c426ad0731ac";
 
 function getWeather(countryName, btn) {
-
+    const weatherUrl = `https://api.weatherstack.com/current?access_key=${weatherApiKey}&query=${countryName}`;
 
     fetch(weatherUrl)
         .then(res => res.json())
