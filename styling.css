@@ -162,3 +162,20 @@ footer {
     to   { opacity: 1; transform: translateY(0); }
   }
   
+
+  .emoji {
+    display: inline-block;
+    font-size: 2.8rem;
+    animation: floatDance 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes floatDance {
+    0%   { transform: translateY(0) rotate(0deg); }
+    25%  { transform: translateY(-5px) rotate(5deg); }
+    50%  { transform: translateY(0) rotate(0deg); }
+    75%  { transform: translateY(5px) rotate(-5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+  
