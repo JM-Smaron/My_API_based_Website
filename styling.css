@@ -14,16 +14,16 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eef2f7;
+    background-color: #cdc0f4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #2d3e50;
+    background-color: #090b4d;
     padding: 2rem;
-    color: white;
+    color: rgb(239, 248, 248);
     text-align: center;
 }
 
@@ -43,8 +43,8 @@ input#searchBox {
 
 button {
     padding: 0.8rem 1.5rem;
-    background-color: #00b894;
-    color: white;
+    background-color: #77efd7;
+    color: rgb(14, 18, 37);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-color: #019875;
+    background-color: #3dcdab;
 }
 
 #displayArea {
